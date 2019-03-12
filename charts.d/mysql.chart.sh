@@ -6,7 +6,7 @@
 # GPL v3+
 #
 
-# http://dev.mysql.com/doc/refman/5.0/en/server-status-variables.html
+# https://dev.mysql.com/doc/refman/5.0/en/server-status-variables.html
 #
 # https://dev.mysql.com/doc/refman/5.1/en/show-status.html
 # SHOW STATUS provides server status information (see Section 5.1.6, “Server Status Variables”).

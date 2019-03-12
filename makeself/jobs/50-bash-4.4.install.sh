@@ -2,7 +2,7 @@
 
 . $(dirname "${0}")/../functions.sh "${@}" || exit 1
 
-fetch "bash-4.4" "http://ftp.gnu.org/gnu/bash/bash-4.4.tar.gz"
+fetch "bash-4.4" "https://ftp.gnu.org/gnu/bash/bash-4.4.tar.gz"
 
 run ./configure \
 	--prefix=${NETDATA_INSTALL_PATH} \
