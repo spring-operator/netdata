@@ -68,7 +68,7 @@ nginx_check() {
 	nginx_get
 	if [ $? -ne 0 ]
 		then
-		echo >&2 "nginx: cannot find stub_status on URL '${nginx_url}'. Please set nginx_url='http://nginx.server/stub_status' in $confd/nginx.conf"
+		echo >&2 "nginx: cannot find stub_status on URL '${nginx_url}'. Please set nginx_url='https://nginx.server/stub_status' in $confd/nginx.conf"
 		return 1
 	fi
 

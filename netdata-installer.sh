@@ -1055,7 +1055,7 @@ OK. NetData is installed and it is running.
 By default netdata listens on all IPs on port ${NETDATA_PORT},
 so you can access it with:
 
-http://this.machine.ip:${NETDATA_PORT}/
+https://this.machine.ip:${NETDATA_PORT}/
 
 To stop netdata, just kill it, with:
 
