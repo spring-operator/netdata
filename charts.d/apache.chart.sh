@@ -157,7 +157,7 @@ apache_check() {
 	apache_get
 	if [ $? -ne 0 ]
 		then
-		error "cannot find stub_status on URL '${apache_url}'. Please set apache_url='http://apache.server:80/server-status?auto' in $confd/apache.conf"
+		error "cannot find stub_status on URL '${apache_url}'. Please set apache_url='https://apache.server:80/server-status?auto' in $confd/apache.conf"
 		return 1
 	fi
 

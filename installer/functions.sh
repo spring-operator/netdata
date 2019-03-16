@@ -349,7 +349,7 @@ iscontainer() {
     fi
 
     # /proc/1/sched exposes the host's pid of our init !
-    # http://stackoverflow.com/a/37016302
+    # https://stackoverflow.com/a/37016302
     local pid=$( cat /proc/1/sched 2>/dev/null | head -n 1 | { IFS='(),#:' read name pid th threads; echo $pid; } )
     pid=$(( pid + 0 ))
     [ ${pid} -ne 1 ] && return 0
@@ -358,7 +358,7 @@ iscontainer() {
     [ ! -z "${container}" ] && return 0
 
     # docker creates /.dockerenv
-    # http://stackoverflow.com/a/25518345
+    # https://stackoverflow.com/a/25518345
     [ -f "/.dockerenv" ] && return 0
 
     # ubuntu and debian supply /bin/running-in-container

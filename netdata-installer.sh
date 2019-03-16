@@ -1167,7 +1167,7 @@ cat <<END
 netdata by default listens on all IPs on port ${NETDATA_PORT},
 so you can access it with:
 
-  ${TPUT_CYAN}${TPUT_BOLD}http://this.machine.ip:${NETDATA_PORT}/${TPUT_RESET}
+  ${TPUT_CYAN}${TPUT_BOLD}https://this.machine.ip:${NETDATA_PORT}/${TPUT_RESET}
 
 To stop netdata run:
 

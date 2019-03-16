@@ -8,7 +8,7 @@
 # a small Shell script stub that uncompresses the archive to a temporary
 # directory and then executes a given script from withing that directory.
 #
-# Makeself home page: http://makeself.io/
+# Makeself home page: https://makeself.io/
 #
 # Version 2.0 is a rewrite of version 1.0 to make the code easier to read and maintain.
 #
@@ -71,7 +71,7 @@
 # (C) 1998-2017 by Stephane Peter <megastep@megastep.org>
 #
 # This software is released under the terms of the GNU GPL version 2 and above
-# Please read the license at http://www.gnu.org/copyleft/gpl.html
+# Please read the license at https://www.gnu.org/copyleft/gpl.html
 #
 
 MS_VERSION=2.3.1
