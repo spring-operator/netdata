@@ -1,1 +1,1 @@
-Icons provided by [IconsDB.com](http://www.iconsdb.com/red-icons/seo-performance-icon.html)
+Icons provided by [IconsDB.com](https://www.iconsdb.com/red-icons/seo-performance-icon.html)

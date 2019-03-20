@@ -331,7 +331,7 @@ int do_proc_net_rpc_nfsd(int update_every, usec_t dt) {
             th_hist100 = (unsigned long long)(atof(procfile_lineword(ff, l, 12)) * 1000.0);
 
             // threads histogram has been disabled on recent kernels
-            // http://permalink.gmane.org/gmane.linux.nfs/24528
+            // https://permalink.gmane.org/gmane.linux.nfs/24528
             unsigned long long sum = th_hist10 + th_hist20 + th_hist30 + th_hist40 + th_hist50 + th_hist60 + th_hist70 + th_hist80 + th_hist90 + th_hist100;
             if(sum == 0ULL) {
                 if(!th_warning) {

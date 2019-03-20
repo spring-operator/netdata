@@ -3,7 +3,7 @@
 
 // ----------------------------------------------------------------------------
 // URL encode / decode
-// code from: http://www.geekhideout.com/urlcode.shtml
+// code from: https://www.geekhideout.com/urlcode.shtml
 
 /* Converts a hex character to its integer value */
 extern char from_hex(char ch);

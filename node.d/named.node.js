@@ -3,7 +3,7 @@
 // collect statistics from bind (named) v9.10+
 //
 // bind statistics documentation at:
-// http://jpmens.net/2013/03/18/json-in-bind-9-s-statistics-server/
+// https://jpmens.net/2013/03/18/json-in-bind-9-s-statistics-server/
 // https://ftp.isc.org/isc/bind/9.10.3/doc/arm/Bv9ARM.ch06.html#statistics
 
 // example configuration in /etc/netdata/node.d/named.conf
@@ -21,7 +21,7 @@
         },
         {
             "name": "bind2",
-            "url": "http://10.0.0.1:8888/xml/v3/server",
+            "url": "https://10.0.0.1:8888/xml/v3/server",
             "update_every": 2
         }
     ]

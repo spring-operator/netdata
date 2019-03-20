@@ -90,7 +90,7 @@ class ConnectionPool(object):
         pass
 
 
-# This is taken from http://hg.python.org/cpython/file/7aaba721ebc0/Lib/socket.py#l252
+# This is taken from https://hg.python.org/cpython/file/7aaba721ebc0/Lib/socket.py#l252
 _blocking_errnos = set([errno.EAGAIN, errno.EWOULDBLOCK])
 
 
@@ -314,7 +314,7 @@ class HTTPConnectionPool(ConnectionPool, RequestMethods):
 
         # Catch possible read timeouts thrown as SSL errors. If not the
         # case, rethrow the original. We need to do this because of:
-        # http://bugs.python.org/issue10272
+        # https://bugs.python.org/issue10272
         if 'timed out' in str(err) or 'did not complete (read)' in str(err):  # Python 2.6
             raise ReadTimeoutError(self, url, "Read timed out. (read timeout=%s)" % timeout_value)
 
@@ -869,7 +869,7 @@ def connection_from_url(url, **kw):
 
     Example::
 
-        >>> conn = connection_from_url('http://google.com/')
+        >>> conn = connection_from_url('https://google.com/')
         >>> r = conn.request('GET', '/')
     """
     scheme, host, port = get_host(url)
@@ -890,7 +890,7 @@ def _ipv6_host(host):
     # httplib crazily doubles up the square brackets on the Host header.
     # Instead, we need to make sure we never pass ``None`` as the port.
     # However, for backward compatibility reasons we can't actually
-    # *assert* that.  See http://bugs.python.org/issue28539
+    # *assert* that.  See https://bugs.python.org/issue28539
     #
     # Also if an IPv6 address literal has a zone identifier, the
     # percent sign might be URIencoded, convert it back into ASCII

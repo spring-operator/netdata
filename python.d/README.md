@@ -92,7 +92,7 @@ local:
   retries  : 20
 
 remote:
-  url          : 'http://www.apache.org/server-status?auto'
+  url          : 'https://www.apache.org/server-status?auto'
   update_every : 5
   retries      : 4
 ```
@@ -275,7 +275,7 @@ It produces one aggregate chart or one chart per dns server, showing the query t
 
 This module provides statistics information from dovecot server. 
 Statistics are taken from dovecot socket by executing `EXPORT global` command.
-More information about dovecot stats can be found on [project wiki page.](http://wiki2.dovecot.org/Statistics)
+More information about dovecot stats can be found on [project wiki page.](https://wiki2.dovecot.org/Statistics)
 
 **Requirement:**
 Dovecot unix socket with R/W permissions for user netdata or dovecot with configured TCP/IP socket.
@@ -589,7 +589,7 @@ Sample:
 via_url:
   user       : 'username' # ONLY IF stats auth is used
   pass       : 'password' # # ONLY IF stats auth is used
-  url     : 'http://ip.address:port/url;csv;norefresh'
+  url     : 'https://ip.address:port/url;csv;norefresh'
 ```
 
 OR

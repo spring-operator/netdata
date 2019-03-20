@@ -14,7 +14,7 @@
 
     <meta property="og:locale" content="en_US" />
     <meta property="og:image" content="https://cloud.githubusercontent.com/assets/2662304/22945737/e98cd0c6-f2fd-11e6-96f1-5501934b0955.png"/>
-    <meta property="og:url" content="http://my-netdata.io/"/>
+    <meta property="og:url" content="https://my-netdata.io/"/>
     <meta property="og:type" content="website"/>
     <meta property="og:site_name" content="netdata"/>
     <meta property="og:title" content="netdata - real-time performance monitoring, done right!"/>
@@ -47,14 +47,14 @@ This is a template for building custom dashboards. To build a dashboard you just
         data-after="-600"
         >&lt;/div>
 &lt;/body>
-&lt;script type="text/javascript" src="http://netdata.server:19999/dashboard.js">&lt;/script>
+&lt;script type="text/javascript" src="https://netdata.server:19999/dashboard.js">&lt;/script>
 &lt;/html>
 </pre>
 
 <ul>
     <li>You can host your dashboard anywhere.</li>
     <li>You can add as many charts as you like.</li>
-    <li>You can have charts from many different netdata servers (add <pre>data-host="http://another.netdata.server:19999/"</pre> to each chart).</li>
+    <li>You can have charts from many different netdata servers (add <pre>data-host="https://another.netdata.server:19999/"</pre> to each chart).</li>
     <li>You can use different chart libraries on the same page: <b>peity</b>, <b>sparkline</b>, <b>dygraph</b>, <b>google</b>, <b>morris</b></li>
     <li>You can customize each chart to your preferences. For each chart library most of their attributes can be given in <b>data-</b> attributes.</li>
     <li>Each chart can have each own duration - it is controlled with the <b>data-after</b> attribute to give that many seconds of data.</li>
@@ -648,8 +648,8 @@ So, to avoid flashing the charts, we destroy and re-create the charts on each up
 </html>
 
 <!-- you can set your netdata server globally, by ucommenting this -->
-<!-- you can also give a different server per chart, with the attribute: data-host="http://netdata.server:19999" -->
-<!-- <script> netdataServer = "http://box:19999"; </script> -->
+<!-- you can also give a different server per chart, with the attribute: data-host="https://netdata.server:19999" -->
+<!-- <script> netdataServer = "https://box:19999"; </script> -->
 
 <!-- load the dashboard manager - it will do the rest -->
 <script type="text/javascript" src="dashboard.js?v20170815-15"></script>

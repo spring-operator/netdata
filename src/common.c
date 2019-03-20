@@ -819,7 +819,7 @@ void netdata_fix_chart_id(char *s) {
 }
 
 /*
-// http://stackoverflow.com/questions/7666509/hash-function-for-string
+// https://stackoverflow.com/questions/7666509/hash-function-for-string
 uint32_t simple_hash(const char *name)
 {
     const char *s = name;

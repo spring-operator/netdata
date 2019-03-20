@@ -22,16 +22,16 @@ class Timeout(object):
 
         timeout = Timeout(connect=2.0, read=7.0)
         http = PoolManager(timeout=timeout)
-        response = http.request('GET', 'http://example.com/')
+        response = http.request('GET', 'https://example.com/')
 
     Or per-request (which overrides the default for the pool)::
 
-        response = http.request('GET', 'http://example.com/', timeout=Timeout(10))
+        response = http.request('GET', 'https://example.com/', timeout=Timeout(10))
 
     Timeouts can be disabled by setting all the parameters to ``None``::
 
         no_timeout = Timeout(connect=None, read=None)
-        response = http.request('GET', 'http://example.com/, timeout=no_timeout)
+        response = http.request('GET', 'https://example.com/, timeout=no_timeout)
 
 
     :param total:
@@ -48,7 +48,7 @@ class Timeout(object):
         The maximum amount of time to wait for a connection attempt to a server
         to succeed. Omitting the parameter will default the connect timeout to
         the system default, probably `the global default timeout in socket.py
-        <http://hg.python.org/cpython/file/603b4d593758/Lib/socket.py#l535>`_.
+        <https://hg.python.org/cpython/file/603b4d593758/Lib/socket.py#l535>`_.
         None will set an infinite timeout for connection attempts.
 
     :type connect: integer, float, or None
@@ -58,7 +58,7 @@ class Timeout(object):
         read operations for a response from the server. Omitting
         the parameter will default the read timeout to the system
         default, probably `the global default timeout in socket.py
-        <http://hg.python.org/cpython/file/603b4d593758/Lib/socket.py#l535>`_.
+        <https://hg.python.org/cpython/file/603b4d593758/Lib/socket.py#l535>`_.
         None will set an infinite timeout.
 
     :type read: integer, float, or None

@@ -311,7 +311,7 @@ class Parser(object):
             #if tag == u'!':
             #    raise ParserError("while parsing a node", start_mark,
             #            "found non-specific tag '!'", tag_mark,
-            #            "Please check 'http://pyyaml.org/wiki/YAMLNonSpecificTag' and share your opinion.")
+            #            "Please check 'https://pyyaml.org/wiki/YAMLNonSpecificTag' and share your opinion.")
             if start_mark is None:
                 start_mark = end_mark = self.peek_token().start_mark
             event = None

@@ -46,7 +46,7 @@ int test1(int argc, char **argv) {
 		uuid_unparse(uuid, machines_guids[m]);
 
 		char buf[FILENAME_MAX + 1];
-		snprintfz(buf, FILENAME_MAX, "http://%u.netdata.rocks/", m+1);
+		snprintfz(buf, FILENAME_MAX, "https://%u.netdata.rocks/", m+1);
 		machines_urls[m] = strdup(buf);
 
 		// fprintf(stderr, "\tmachine %u: '%s', url: '%s'\n", m + 1, machines_guids[m], machines_urls[m]);
@@ -133,7 +133,7 @@ int test1(int argc, char **argv) {
 			char *url = machines_urls[tm];
 			char buf[FILENAME_MAX + 1];
 			if (random() % 10000 == 1234) {
-				snprintfz(buf, FILENAME_MAX, "http://random.%ld.netdata.rocks/", random());
+				snprintfz(buf, FILENAME_MAX, "https://random.%ld.netdata.rocks/", random());
 				url = buf;
 			}
 			else if (random() % 1000 == 123)
@@ -199,12 +199,12 @@ int main(int argc, char **argv) {
 #ifdef REGISTRY_STDOUT_DUMP
 		fprintf(stderr, "\n\nADDING ANOTHER URL\n");
 #endif /* REGISTRY_STDOUT_DUMP */
-		p1 = registry_request_access(p1->guid, "7c173980-145c-11e6-b86f-00508db7e9c1", "http://my.server:19999/", "test", time(NULL));
+		p1 = registry_request_access(p1->guid, "7c173980-145c-11e6-b86f-00508db7e9c1", "https://my.server:19999/", "test", time(NULL));
 
 #ifdef REGISTRY_STDOUT_DUMP
 		fprintf(stderr, "\n\nADDING ANOTHER MACHINE\n");
 #endif /* REGISTRY_STDOUT_DUMP */
-		p1 = registry_request_access(p1->guid, "7c173980-145c-11e6-b86f-00508db7e9c1", "http://my.server:19999/", "test", time(NULL));
+		p1 = registry_request_access(p1->guid, "7c173980-145c-11e6-b86f-00508db7e9c1", "https://my.server:19999/", "test", time(NULL));
 
 #ifdef REGISTRY_STDOUT_DUMP
 		fprintf(stderr, "\n\nADDING ANOTHER PERSON\n");

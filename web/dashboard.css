@@ -364,7 +364,7 @@ body {
 
 .dygraph-label-rotate-left {
     text-align: center;
-    /* See http://caniuse.com/#feat=transforms2d */
+    /* See https://caniuse.com/#feat=transforms2d */
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -375,7 +375,7 @@ body {
 /* For y2-axis label */
 .dygraph-label-rotate-right {
     text-align: center;
-    /* See http://caniuse.com/#feat=transforms2d */
+    /* See https://caniuse.com/#feat=transforms2d */
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);

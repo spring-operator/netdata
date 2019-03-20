@@ -176,7 +176,7 @@ long double moving_median(long double *series, size_t entries, size_t period) {
 
 // --------------------------------------------------------------------------------------------------------------------
 
-// http://stackoverflow.com/a/15150143/4525767
+// https://stackoverflow.com/a/15150143/4525767
 long double running_median_estimate(long double *series, size_t entries) {
     long double median = 0.0f;
     long double average = 0.0f;
@@ -266,7 +266,7 @@ long double single_exponential_smoothing(long double *series, size_t entries, lo
 
 // --------------------------------------------------------------------------------------------------------------------
 
-// http://grisha.org/blog/2016/02/16/triple-exponential-smoothing-forecasting-part-ii/
+// https://grisha.org/blog/2016/02/16/triple-exponential-smoothing-forecasting-part-ii/
 long double double_exponential_smoothing(long double *series, size_t entries, long double alpha, long double beta, long double *forecast) {
     size_t i, count = 0;
     long double level = series[0], trend, sum;

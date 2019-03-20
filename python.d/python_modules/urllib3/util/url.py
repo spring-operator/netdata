@@ -64,12 +64,12 @@ class Url(namedtuple('Url', url_attrs)):
 
         Example: ::
 
-            >>> U = parse_url('http://google.com/mail/')
+            >>> U = parse_url('https://google.com/mail/')
             >>> U.url
-            'http://google.com/mail/'
+            'https://google.com/mail/'
             >>> Url('http', 'username:password', 'host.com', 80,
             ... '/path', 'query', 'fragment').url
-            'http://username:password@host.com:80/path?query#fragment'
+            'https://username:password@host.com:80/path?query#fragment'
         """
         scheme, auth, host, port, path, query, fragment = self
         url = ''
@@ -138,7 +138,7 @@ def parse_url(url):
 
     Example::
 
-        >>> parse_url('http://google.com/mail/')
+        >>> parse_url('https://google.com/mail/')
         Url(scheme='http', host='google.com', port=None, path='/mail/', ...)
         >>> parse_url('google.com:80')
         Url(scheme=None, host='google.com', port=80, path=None, ...)
@@ -168,7 +168,7 @@ def parse_url(url):
         scheme, url = url.split('://', 1)
 
     # Find the earliest Authority Terminator
-    # (http://tools.ietf.org/html/rfc3986#section-3.2)
+    # (https://tools.ietf.org/html/rfc3986#section-3.2)
     url, path_, delim = split_first(url, ['/', '?', '#'])
 
     if delim:

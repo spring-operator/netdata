@@ -86,8 +86,8 @@ var NETDATA = window.NETDATA || {};
     // ----------------------------------------------------------------------------------------------------------------
     // Detect the netdata server
 
-    // http://stackoverflow.com/questions/984510/what-is-my-script-src-url
-    // http://stackoverflow.com/questions/6941533/get-protocol-domain-and-port-from-url
+    // https://stackoverflow.com/questions/984510/what-is-my-script-src-url
+    // https://stackoverflow.com/questions/6941533/get-protocol-domain-and-port-from-url
     NETDATA._scriptSource = function() {
         var script = null;
 
@@ -198,7 +198,7 @@ var NETDATA = window.NETDATA || {};
     //                      '#6633CC', '#E67300', '#8B0707', '#329262', '#5574A6', '#3B3EAC' ];
 
     // an alternative set
-    // http://www.mulinblog.com/a-color-palette-optimized-for-data-visualization/
+    // https://www.mulinblog.com/a-color-palette-optimized-for-data-visualization/
     //                         (blue)     (red)      (orange)   (green)    (pink)     (brown)    (purple)   (yellow)   (gray)
     //NETDATA.colors        = [ '#5DA5DA', '#F15854', '#FAA43A', '#60BD68', '#F17CB0', '#B2912F', '#B276B2', '#DECF3F', '#4D4D4D' ];
 

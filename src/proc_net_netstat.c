@@ -78,7 +78,7 @@ int do_proc_net_netstat(int update_every, usec_t dt) {
     static unsigned long long tcpext_SyncookiesFailed = 0;
 
     // IPv4 TCP Out Of Order Queue
-    // http://www.spinics.net/lists/netdev/msg204696.html
+    // https://www.spinics.net/lists/netdev/msg204696.html
     static unsigned long long tcpext_TCPOFOQueue = 0; // Number of packets queued in OFO queue
     static unsigned long long tcpext_TCPOFODrop = 0;  // Number of packets meant to be queued in OFO but dropped because socket rcvbuf limit hit.
     static unsigned long long tcpext_TCPOFOMerge = 0; // Number of packets in OFO that were merged with other packets.

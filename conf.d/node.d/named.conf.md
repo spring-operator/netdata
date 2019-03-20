@@ -263,7 +263,7 @@ The collector (optionally) reads a configuration file named `/etc/netdata/node.d
         },
         {
             "name": "bind2",
-            "url": "http://10.1.2.3:8888/json/v1/server",
+            "url": "https://10.1.2.3:8888/json/v1/server",
             "update_every": 2
         }
     ]
@@ -323,7 +323,7 @@ Auto-detection is controlled by `enable_autodetect` in the config file. The defa
 
 To use this plugin, you have to have bind v9.10+ properly compiled to provide statistics in `JSON` format.
 
-For more information on how to get your bind installation ready, please refer to the [bind statistics channel developer comments](http://jpmens.net/2013/03/18/json-in-bind-9-s-statistics-server/) and to [bind documentation](https://ftp.isc.org/isc/bind/9.10.3/doc/arm/Bv9ARM.ch06.html#statistics) or [bind Knowledge Base article AA-01123](https://kb.isc.org/article/AA-01123/0).
+For more information on how to get your bind installation ready, please refer to the [bind statistics channel developer comments](https://jpmens.net/2013/03/18/json-in-bind-9-s-statistics-server/) and to [bind documentation](https://ftp.isc.org/isc/bind/9.10.3/doc/arm/Bv9ARM.ch06.html#statistics) or [bind Knowledge Base article AA-01123](https://kb.isc.org/article/AA-01123/0).
 
 Normally, you will need something like this in your `named.conf`:
 

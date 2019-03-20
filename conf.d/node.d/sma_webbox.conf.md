@@ -1,5 +1,5 @@
 
-[SMA Sunny Webbox](http://www.solar-is-future.com/sma-technology-for-our-future/products/sunny-webbox/index.html)
+[SMA Sunny Webbox](https://www.sma.de/sma-technology-for-our-future/products/sunny-webbox/index.html)
 
 Example netdata configuration for node.d/sma_webbox.conf
 

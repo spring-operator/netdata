@@ -36,7 +36,7 @@ The charts are being generated using the configuration below. So if your install
         {
             "name": "System",
             "id": "system",
-            "url": "http://machine.ip.or.dns/?s=1,0",
+            "url": "https://machine.ip.or.dns/?s=1,0",
             "update_every": 10,
             "categories": [ 
 		{
@@ -331,7 +331,7 @@ The charts are being generated using the configuration below. So if your install
 	{
             "name": "Heat Pump",
             "id": "heatpump",
-            "url": "http://machine.ip.or.dns/?s=1,1",
+            "url": "https://machine.ip.or.dns/?s=1,1",
             "update_every": 10,
             "categories": [
 		{

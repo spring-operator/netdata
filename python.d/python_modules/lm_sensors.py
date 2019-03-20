@@ -5,9 +5,9 @@ Python Bindings for libsensors3
 use the documentation of libsensors for the low level API.
 see example.py for high level API usage.
 
-@author: Pavel Rojtberg (http://www.rojtberg.net)
+@author: Pavel Rojtberg (https://www.rojtberg.net)
 @see: https://github.com/paroj/sensors.py
-@copyright: LGPLv2 (same as libsensors) <http://opensource.org/licenses/LGPL-2.1>
+@copyright: LGPLv2 (same as libsensors) <https://opensource.org/licenses/LGPL-2.1>
 """
 
 from ctypes import *

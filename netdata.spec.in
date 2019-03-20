@@ -82,7 +82,7 @@ Release:	1%{?dist}
 License:	GPLv3+
 Group:		Applications/System
 Source0:	https://github.com/firehol/%{name}/releases/download/v@PACKAGE_VERSION@/%{name}-@PACKAGE_VERSION@.tar.xz
-URL:		http://my-netdata.io
+URL:		https://my-netdata.io
 BuildRequires:	pkgconfig
 BuildRequires:	xz
 BuildRequires:	zlib-devel

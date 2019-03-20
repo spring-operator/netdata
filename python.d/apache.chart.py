@@ -14,7 +14,7 @@ retries = 60
 #             'update_every': update_every,
 #             'retries': retries,
 #             'priority': priority,
-#             'url': 'http://www.apache.org/server-status?auto'
+#             'url': 'https://www.apache.org/server-status?auto'
 #          }}
 
 # charts order (can be overridden if you want less charts, or different order)

@@ -134,7 +134,7 @@ int do_proc_meminfo(int update_every, usec_t dt) {
 
     // --------------------------------------------------------------------
 
-    // http://stackoverflow.com/questions/3019748/how-to-reliably-measure-available-memory-in-linux
+    // https://stackoverflow.com/questions/3019748/how-to-reliably-measure-available-memory-in-linux
     unsigned long long MemUsed = MemTotal - MemFree - Cached - Buffers;
 
     if(do_ram) {

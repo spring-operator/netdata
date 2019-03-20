@@ -304,7 +304,7 @@ static const char *strerror_result(int a, const char *b) { (void)a; return b; }
 #elif defined(HAVE_C__GENERIC)
 
 // what a trick!
-// http://stackoverflow.com/questions/479207/function-overloading-in-c
+// https://stackoverflow.com/questions/479207/function-overloading-in-c
 static const char *strerror_result_int(int a, const char *b) { (void)a; return b; }
 static const char *strerror_result_string(const char *a, const char *b) { (void)b; return a; }
 
